@@ -1,0 +1,358 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.clg-details {
+
+    width: 640px;
+    min-height: 88px;
+    background-color: aqua;
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.form-group {
+    width: 640px;
+    min-height: 88px;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 24px;
+    background-color: white;
+    margin: 12px 0;
+}
+
+body {
+    font-family: docs-Roboto, Helvetica, Arial, sans-serif;
+    background-color: rgb(240, 235, 248);
+}
+
+.clg-details {
+    border-top: 10px solid rgb(103, 58, 183);
+
+}
+
+span {
+    color: #D93025;
+}
+
+.clg-details .head .clg-name {
+    font-family: 'docs-Roboto', Helvetica, Arial, sans-serif;
+    margin: 20px 24px 0px 24px;
+    font-size: 32px;
+
+    line-height: 130%;
+    padding: 0px 10px 0 0;
+    font-weight: 400;
+}
+
+.clg-details .head .clg-department {
+    margin: 10px 0 15px 0;
+    font-weight: 400;
+    letter-spacing: .2px;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 0 24px;
+    color: rgb(32, 33, 36);
+    line-height: 22x;
+}
+
+
+
+.clg-details .body {
+    padding: 18px 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
+
+.clg-details .foot p {
+    padding: 20px 24px;
+    color: #D93025;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-group input {
+    border: none;
+    border-bottom: 1px solid gray;
+    outline: none;
+    background: none;
+    width: 295px;
+    height: 24px;
+    font-size: 14px;
+    padding: px 0px;
+}
+
+.form-group input::placeholder {
+    font-size: 16px;
+    line-height: 15px;
+    padding: 3px 0;
+}
+
+.form-group input:focus {
+    border-color: rgb(103, 58, 183);
+    border-width: 2px;
+}
+
+.select-box {
+    width: 300px;
+    position: relative;
+}
+
+select {
+    font-family: Roboto, Arial, sans-serif;
+    height: 43px;
+    padding: 10px 15px;
+    line-height: 22px;
+    font-size: 16px;
+    width: 100%;
+    /* appearance: none; */
+    border: 1px solid gray;
+    border: none;
+    outline: none;
+    border-radius: 9px;
+}
+
+option {
+    content: '';
+    position: absolute;
+
+    padding: 100px;
+    border: none;
+}
+
+optgroup {
+    margin: 10px 0
+}
+
+.radio {
+    display: flex;
+}
+
+input[type=radio] {
+    width: 30px;
+    margin: 10px 0;
+}
+
+.radio-label {
+    padding: 15px 0 0 10px;
+
+}
+
+.radio-label span {
+    color: black;
+    margin-bottom: 50px;
+    line-height: 50px;
+}
+
+.Select-options option {
+    width: 100%;
+    line-height: 30px;
+    font-size: 20px;
+    margin: 20px;
+    position: absolute;
+    padding: 20px
+}
+.foot{
+    flex-direction: column;
+}
+.foot .next-page{
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.foot .next-page a{
+    padding:9px 20px;
+    background-color: white;
+    text-decoration: none;
+    margin-right: 490px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+.foot .next-page p{
+    font-size: 16px;
+    color: rgb(103, 58, 183);
+}
+
+.det{margin-right: 25%;margin-bottom: 14px; font-size: 12px;}
+.policy{
+text-align: center;
+margin-left: 19px;
+margin-bottom: 17px;
+font-size: 12px;
+}
+.object{
+    margin-bottom: 20px;
+}
+.object h4{
+    font-size: 23px;
+    font-weight: 400;
+    color:rgb(88, 84, 84);
+}
+.object h4 span{
+    color:rgb(150, 147, 147);
+}
+@media screen and (max-width:798px) {
+    .clg-details {
+        width: 100%;
+        width: 95%;
+        margin: 0 auto;
+      
+    }
+    .container {
+        padding: 16px;
+
+    }
+
+    .form-group {
+        width: 95%;
+        padding: 10px;
+        min-height:125px;
+        margin: 10px auto;
+    }
+    .form-group label{
+        padding:5px 5px;
+    }
+   .radio .radio-label{
+    padding-left: 8px;
+    }
+    input[type=radio]{
+        width:20px;
+        margin:0px
+    }
+    select {
+        width: 50%;
+    }
+
+    .course {
+        width: 100%;
+    }
+    .inp{
+        margin-top: 12px;
+    }
+    .radio-group{
+        height:210px;
+        padding:10px;
+    }
+    input[type=text],input[type=email]{
+        width:100%;
+        font-size: 18px;
+    }
+
+    .det{
+        font-size: 12px;
+        margin-right:25px;
+        margin-left: px;
+    }
+    .next-page{
+        display:inline
+    }
+    .foot .next-page a{
+     margin-right:150px;   
+    }
+    .foot .next-page p{
+        margin-right: 0px;
+        font-size: 13px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.form-group-head{
+    width: 640px;
+    min-height: 88px;
+    background-color: aqua;
+  
+    background-color: white;
+    margin:12px 0;
+    border-radius: 10px;
+}
+.form-group-head .feedback{
+    border-radius: 10px 10px 0 0;
+        background-color: rgb(103, 58, 183);
+        color: rgba(255, 255, 255, 1);
+        padding:10px;
+}
+.form-group-head p{
+    padding:24px;
+}
+.form-group-ques{
+    padding:14px;
+}
+.form-group .radio-box{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+.form-group .radio-box-radio-btn{
+    width:20px;
+}
+.form-group .radio-box-radio-lab{
+    margin-top: 20px;
+}
+.form-group-ques h1{
+    font-weight: 400;
+    font-size: 1rem;
+    padding:9px;
+}
+.next-page-ques{
+    display:flex;
+}
+.next-page-ques .sub{
+    display:flex;
+    gap:30px;
+    margin-right: 370px;
+    margin-bottom:15px;
+}
+.next-page-ques .sub a{
+    color: rgb(103, 58, 183);
+    padding:9px 20px;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: bold;
+}
+.next-page-ques .sub button{
+    padding:8px 20px;
+    background-color: rgb(103, 58, 183);
+    color:white;
+    border:none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.next-page-ques  p{
+    color: rgb(103, 58, 183);
+}
