@@ -34,6 +34,7 @@
 body {
     font-family: docs-Roboto, Helvetica, Arial, sans-serif;
     background-color: rgb(240, 235, 248);
+    background-color: #FE4164;
 }
 
 .clg-details {
@@ -173,28 +174,42 @@ input[type=radio] {
     position: absolute;
     padding: 20px
 }
-.foot{
+
+.foot {
     flex-direction: column;
 }
-.foot .next-page{
+
+.foot .next-page {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin-bottom: 15px;
-}
-.foot .next-page a{
-    padding:9px 20px;
-    background-color: white;
-    text-decoration: none;
-    margin-right: 490px;
-    cursor: pointer;
-    border-radius: 7px;
-}
-.foot .next-page p{
-    font-size: 16px;
-    color: rgb(103, 58, 183);
+    padding: 10px;
+    width: 640px;
 }
 
-.det{margin-right: 25%;margin-bottom: 14px; font-size: 12px;}
+.foot .next-page a {
+    padding: 13px 30px;
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.next-page button {
+    color: rgb(103, 58, 183);
+    border: none;
+    font-size: 16px;
+    background-color: white;
+    padding: 13px 0;
+    width: 120px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* .det{margin-right: 25%;margin-bottom: 14px; font-size: 12px;}
 .policy{
 text-align: center;
 margin-left: 19px;
@@ -211,35 +226,225 @@ font-size: 12px;
 }
 .object h4 span{
     color:rgb(150, 147, 147);
+} */
+
+
+
+
+
+
+
+
+/* ques page */
+
+
+
+
+.clg-details-ques {
+    width: 640px;
+    min-height: 88px;
+    background-color: aqua;
+    border-radius: 10px;
+    background-color: white;
+
 }
+
+.form-group-head {
+    width: 640px;
+    min-height: 88px;
+    background-color: aqua;
+
+    background-color: white;
+    margin: 12px 0;
+    border-radius: 10px;
+}
+
+.form-group-head .feedback {
+    border-radius: 10px 10px 0 0;
+    background-color: rgb(103, 58, 183);
+    color: rgba(255, 255, 255, 1);
+    padding: 10px;
+}
+
+.form-group-head p {
+    padding: 24px;
+}
+
+.form-group-ques {
+    padding: 14px;
+}
+
+.form-group .radio-box {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-left: 20%;
+    font-size: 20px;
+}
+
+.form-group .radio-box-radio-btn {
+    width: 20px;
+}
+
+.form-group .radio-box-radio-lab {
+    margin-top: 20px;
+}
+
+.form-group-ques h1 {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 9px;
+}
+
+.next-page-ques {
+    width: 640px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+
+}
+
+.next-page-ques .sub {
+    display: flex;
+    column-gap: 12px
+}
+
+.next-page-ques .sub a {
+    color: rgb(103, 58, 183);
+    background-color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-weight: bold;
+    padding: 13px 30px;
+    text-align: center;
+}
+
+/* padding:0px 0px;
+    background-color: rgb(103, 58, 183);
+    color:white;
+    border:none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600; */
+
+.next-page-ques .sub button {
+
+    padding: 0px 0px;
+    background-color: rgb(103, 58, 183);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+.next-page-ques button {
+    color: rgb(103, 58, 183);
+    border: none;
+    font-size: 18px;
+    background-color: white;
+    padding: 13px 0;
+    width: 120px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+/* Register Success Page */
+.submit-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'docs-Roboto', Helvetica, Arial, sans-serif;
+}
+
+.submit-box {
+    width: 680px;
+    min-height: 88px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    padding-top: 20px;
+    border-top: 13px solid rgb(103, 58, 183);
+    ;
+
+}
+
+.submit-box h1 {
+    font-family: 'docs-Roboto', Helvetica, Arial, sans-serif;
+    margin: 20px 24px 0px 24px;
+    font-size: 2rem;
+    line-height: 130%;
+    padding: 0px 10px 0 0;
+    font-weight: 400;
+}
+
+.submit-box p {
+    padding: 0px 10px 0 0;
+    font-weight: 400;
+    margin: 20px 24px;
+}
+
+.submit-box a {
+    padding: 0px 10px 0 0;
+    font-weight: 400;
+    margin: 20px 24px;
+}
+
+
+
+
+
+
 @media screen and (max-width:798px) {
     .clg-details {
-        width: 100%;
         width: 95%;
         margin: 0 auto;
-      
-    }
-    .container {
-        padding: 16px;
 
     }
+
+    .clg-details .head .clg-name {
+        margin-left: 10px
+    }
+
+    .clg-details .head .clg-name {
+        padding: 0 11px;
+    }
+
 
     .form-group {
-        width: 95%;
+        width: 100%;
         padding: 10px;
-        min-height:125px;
+        min-height: 125px;
         margin: 10px auto;
     }
-    .form-group label{
-        padding:5px 5px;
+
+    .form-group label {
+        padding: 5px 5px;
     }
-   .radio .radio-label{
-    padding-left: 8px;
+
+    .radio .radio-label {
+        padding-left: 8px;
     }
-    input[type=radio]{
-        width:20px;
-        margin:0px
+
+    input[type=radio] {
+        width: 20px;
+        margin: 0px
     }
+
     select {
         width: 50%;
     }
@@ -247,112 +452,101 @@ font-size: 12px;
     .course {
         width: 100%;
     }
-    .inp{
+
+    .inp {
         margin-top: 12px;
     }
-    .radio-group{
-        height:210px;
-        padding:10px;
+
+    .radio-group {
+        height: 210px;
+        padding: 10px;
     }
-    input[type=text],input[type=email]{
-        width:100%;
+
+    input[type=text],
+    input[type=email] {
+        width: 100%;
         font-size: 18px;
     }
 
-    .det{
+    .det {
         font-size: 12px;
-        margin-right:25px;
+        margin-right: 25px;
         margin-left: px;
     }
-    .next-page{
-        display:inline
+
+    .foot .next-page {
+        width: 100vw;
+        justify-content: space-between;
+        padding: 10px;
     }
-    .foot .next-page a{
-     margin-right:150px;   
+
+
+
+    /* ques page */
+
+
+
+
+    .ques-container {
+        padding: 10px;
     }
-    .foot .next-page p{
-        margin-right: 0px;
-        font-size: 13px;
+
+
+    .next-page-ques {
+        width: 100%;
+        margin: 10px auto;
+        padding: 0;
+
     }
-}
+
+    .clg-details-ques {
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+
+    }
+
+    .form-group-head {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .form-group-head p {
+        padding: 12px;
+    }
+
+    /* buttons */
+    .next-page-ques .sub {
+        flex-direction: column;
+        row-gap: 14px;
+    }
+
+    .next-page-ques .sub button {
+        padding: 11px 0;
+    }
+
+    .next-page-ques button {
+        width: 120px;
+        font-size: 17px;
+    }
+
+    .foot {
+        padding: 10px;
+    }
+
+    /* form extraa class */
+    .reg-form {
+        width: 95%;
+    }
 
 
 
 
 
-
-
-
-
-
-.form-group-head{
-    width: 640px;
-    min-height: 88px;
-    background-color: aqua;
-  
-    background-color: white;
-    margin:12px 0;
-    border-radius: 10px;
-}
-.form-group-head .feedback{
-    border-radius: 10px 10px 0 0;
-        background-color: rgb(103, 58, 183);
-        color: rgba(255, 255, 255, 1);
-        padding:10px;
-}
-.form-group-head p{
-    padding:24px;
-}
-.form-group-ques{
-    padding:14px;
-}
-.form-group .radio-box{
-    display:flex;
-    gap:20px;
-    align-items:center;
-    margin-left: 20%;
-    font-size: 20px;
-}
-
-.form-group .radio-box-radio-btn{
-    width:20px;
-}
-.form-group .radio-box-radio-lab{
-    margin-top: 20px;
-}
-.form-group-ques h1{
-    font-weight: 400;
-    font-size: 1rem;
-    padding:9px;
-}
-.next-page-ques{
-    display:flex;
-}
-.next-page-ques .sub{
-    display:flex;
-    gap:30px;
-    margin-right: 370px;
-    margin-bottom:15px;
-}
-.next-page-ques .sub a{
-    color: rgb(103, 58, 183);
-    padding:9px 20px;
-    background-color: white;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 7px;
-    font-weight: bold;
-}
-.next-page-ques .sub button{
-    padding:8px 20px;
-    background-color: rgb(103, 58, 183);
-    color:white;
-    border:none;
-    cursor: pointer;
-    border-radius: 7px;
-    font-size: 16px;
-    font-weight: 600;
-}
-.next-page-ques  p{
-    color: rgb(103, 58, 183);
+    /* register success page */
+    .submit-box {
+        width: 100%;
+        padding: 5px;
+        padding-bottom: 20px;
+    }
 }

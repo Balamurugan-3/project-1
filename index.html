@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register Form From Harini</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -28,15 +28,15 @@
                     <p>* Indicates required question</p>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group reg-form">
                 <label for="email">Email <span>*</span></label>
                 <input class="inp" type="email" id="email" name="Email" placeholder="Your email" required>
             </div>
-            <div class="form-group">
+            <div class="form-group reg-form">
                 <label for="rollno">Register Number/ Roll Number <span>*</span></label>
                 <input class="inp" type="text" id="rollno" name="rollno" placeholder="Your answer" required>
             </div>
-            <div class="form-group radio-group">
+            <div class="form-group radio-group reg-form">
                 <label for="year">Year <span>*</span></label>
                 <div class="radio">
                     <input class="inp" type="radio" id="1year" name="year">
@@ -49,16 +49,16 @@
                     </label>
                 </div>
                 <div class="radio">
-                    <input type="radio" id="3year" name="year">
+                    <input type="radio" id="3year" name="year" >
                     <label for="3year" class="radio-label">III YEAR
                     </label>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group reg-form">
                 <label>Semester <span>*</span></label>
                 <div class="select-box">
                     <select name="" id="" class="Select-options">
-                        <option value="" active>CHOOSE</option>
+                        <option value="" selected>CHOOSE</option>
                         <option value="I">I</option>
                         <option value="II">II</option>
                         <option value="III">III</option>
@@ -68,13 +68,13 @@
                     </select>
                 </div>
             </div>
-            <div class="form-group">
+            <div class="form-group reg-form">
                 <label>Feedback For The Unit-Wise
                     <span>*</span>
                 </label>
                 <div class="select-box">
                     <select name="" id="" class="Select-options">
-                        <option value="UNIT 1">UNIT 1</option>
+                        <option value="UNIT 1" selected>UNIT 1</option>
                         <option value="UNIT 2">UNIT 2</option>
                         <option value="UNIT 3">UNIT 3</option>
                         <option value="UNIT 4">UNIT 4</option>
@@ -83,11 +83,11 @@
                 </div>
 
             </div>
-            <div class="form-group">
+            <div class="form-group reg-form">
                 <label>Select Subject <span>*</span>
                 </label>
                 <select name="" class="Select-options course">
-                    <option value="" readonly>Courses</option>
+                    <option value="" selected>Subject</option>
                     <option value="Tamil">Tamil</option>
                     <option value="English">English</option>
                     <option value="Maths">Maths</option>
@@ -109,18 +109,19 @@
                     <option value="Data mining">Data mining</option>
                     <option value="Mobile application developement">Mobile application developement</option>
                     <option value="IOT and it's application">IOT and it's application</option>
-
+                    <option value="IOT and it's application">MAD LAB</option>
                 </select>
             </div>
-        </form>
+       
 
     </div>
     `<div class="container foot">
         <div class="next-page">
             <a href="./ques.html">Next</a>
-            <p>Clear form</p>
+            
+            <button type="reset">Clear form</button></form>
         </div>
-        <p class="det">Never submit passwords through Google Forms.</p>
+        <!-- <p class="det">Never submit passwords through Google Forms.</p>
         <p class="policy">This content is neither created nor endorsed by Google.
             <a href="">Report Abuse - </a>
             <a href=""> Terms of Service -</a>
@@ -128,7 +129,7 @@
         </p>
         <div class="object">
             <h4>Google <span>Forms</span></h4>
-        </div>
+        </div> -->
     </div>
 </body>
 
